@@ -8,7 +8,7 @@ import org.apache.logging.log4j.Logger;
 import org.example.core.mobile.configuration.AddressConfigurator;
 import org.example.core.mobile.configuration.CapabilitiesConfigurator;
 import org.example.core.mobile.configuration.ConfigurationReader;
-import org.example.core.mobile.configuration.EnvironmentType;
+import org.example.core.common.configuration.EnvironmentType;
 
 import java.io.IOException;
 import java.util.Optional;
