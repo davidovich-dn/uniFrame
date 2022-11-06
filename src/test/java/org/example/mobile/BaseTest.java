@@ -15,10 +15,10 @@ public class BaseTest {
         DriverManager.getDriver();
     }
 
-    @AfterMethod
-    public void resetApp() {
-        DriverManager.getDriver().resetApp();
-    }
+//    @AfterMethod
+//    public void resetApp() {
+//        DriverManager.getDriver().resetApp();
+//    }
 
     @AfterClass
     public void closeSession() {
