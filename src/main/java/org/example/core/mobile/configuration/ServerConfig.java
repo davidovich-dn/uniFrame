@@ -2,7 +2,7 @@ package org.example.core.mobile.configuration;
 
 import org.aeonbits.owner.Config;
 
-public interface ServerConfig extends Config{
+public interface ServerConfig extends Config {
 
     @Key("env.type")
     String environment();

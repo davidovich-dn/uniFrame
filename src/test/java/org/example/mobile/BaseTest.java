@@ -3,12 +3,11 @@ package org.example.mobile;
 import org.example.core.common.utils.TestListener;
 import org.example.core.mobile.driver.DriverManager;
 import org.testng.annotations.AfterClass;
-import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Listeners;
 
 @Listeners({TestListener.class})
-public class BaseTest {
+public abstract class BaseTest {
 
     @BeforeClass
     public void createSession() {

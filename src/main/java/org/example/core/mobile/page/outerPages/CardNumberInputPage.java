@@ -1,16 +1,11 @@
-package org.example.core.mobile.page;
+package org.example.core.mobile.page.outerPages;
 
-import io.appium.java_client.MobileDriver;
 import io.qameta.allure.Step;
-import org.example.core.mobile.driver.DriverManager;
+import org.example.core.mobile.page.BasePage;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class CardNumberInputPage extends BasePage {
-
-    MobileDriver driver = DriverManager.getDriver();
-    WebDriverWait wait = new WebDriverWait(driver, 30);
 
     public CardNumberInputPage() {
         super();

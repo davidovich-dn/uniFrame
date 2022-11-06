@@ -13,7 +13,8 @@ public final class Driver {
 
     private static final Logger LOG = LogManager.getRootLogger();
 
-    private Driver() {}
+    private Driver() {
+    }
 
     synchronized public static WebDriver getDriver() {
         if (driver == null) {
@@ -22,7 +23,7 @@ public final class Driver {
         return driver;
     }
 
-    private static void setDriver(){
+    private static void setDriver() {
         System.setProperty("webdriver.chrome.driver",
                 "/home/dzmitry/IdeaProjects/uniFrame/src/main/resources/chromedriver");
         driver = new ChromeDriver();
@@ -32,7 +33,7 @@ public final class Driver {
         LOG.info("Browser started.");
     }
 
-    public static void closeDriver(){
+    public static void closeDriver() {
         driver.quit();
         driver = null;
         LOG.info("Browser closed.");

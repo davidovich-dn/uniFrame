@@ -4,9 +4,10 @@ import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.MobileElement;
 import io.qameta.allure.Feature;
 import org.example.core.mobile.driver.DriverManager;
-import org.example.core.mobile.page.CardNumberInputPage;
-import org.example.core.mobile.page.PasswordInputPage;
-import org.example.core.mobile.page.WelcomePage;
+import org.example.core.mobile.page.innerPages.MainPage;
+import org.example.core.mobile.page.outerPages.CardNumberInputPage;
+import org.example.core.mobile.page.outerPages.PasswordInputPage;
+import org.example.core.mobile.page.outerPages.WelcomePage;
 import org.testng.annotations.Test;
 
 public class LoginTest extends BaseTest {
@@ -26,6 +27,7 @@ public class LoginTest extends BaseTest {
     public void filterCouponsByPartnerTest() throws InterruptedException {
         AppiumDriver<MobileElement> driver = DriverManager.getDriver();
 
+        new MainPage().clickAppMenuBarCouponsItem();
         Thread.sleep(10000);
     }
 }

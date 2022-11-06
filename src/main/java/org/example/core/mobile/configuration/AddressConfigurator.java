@@ -58,7 +58,7 @@ public class AddressConfigurator {
 
     private static boolean isPortFree(int port) {
         boolean isFree = true;
-        try(ServerSocket ignored = new ServerSocket(port)) {
+        try (ServerSocket ignored = new ServerSocket(port)) {
             LOG.info("Specified port - {} is available and ready to use", port);
         } catch (Exception e) {
             isFree = false;
