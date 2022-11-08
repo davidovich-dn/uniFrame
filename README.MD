@@ -12,3 +12,8 @@ what I plan to implement (basics):
 IMPORTANT
 
 Have to implement Istqb generic test automation architecture
+
+Notes to think about:
+
+1. Driver factory for whole taf
+2. Page Object/Screen factory for whole taf
